@@ -5,6 +5,7 @@ import (
 	"ProyectoWeb/models"
 )
 
+// Permite crear las tablas de la BD
 func Migrate() {
 	db := configuration.GetConnection()
 	defer db.Close()
