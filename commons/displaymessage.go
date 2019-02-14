@@ -14,6 +14,7 @@ func DisplayMessage(w http.ResponseWriter, m models.Message){
 		log.Fatalf("Error al convertir el mensaje: %s",err)
 	}
 
+	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(m.Code)
 	w.Write(j)
 }
