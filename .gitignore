@@ -1,0 +1,10 @@
+# Carpetas
+.idea
+keys
+
+#archivos
+config.json
+
+# Ejecutables
+main
+main.exe
